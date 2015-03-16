@@ -1,3 +1,5 @@
+let macvim_skip_colorscheme = 1
+
 "start maximised
 if has("gui_running")
   " GUI is running or is about to start.
@@ -102,24 +104,19 @@ set go-=L  "remove left-hand scroll bar
 
 filetype detect " always detect filetype
 
-set guifont=Monospace\ 9
+set guifont=DejaVu\ Sans\ Mono\ For\ Powerline:h13
 
 "jump between windows with Alt
-nmap <silent> <A-k> :wincmd k<CR>
-nmap <silent> <A-j> :wincmd j<CR>
-nmap <silent> <A-h> :wincmd h<CR>
-nmap <silent> <A-l> :wincmd l<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 "nerdtree ignore
 let NERDTreeIgnore = ['\.pyc$']
 
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
-
-" Always show statusline
-set laststatus=2
-
-" Use 256 colours (Use this setting only if your terminal supports 256 colours)
-set t_Co=256
+" Always show statusline set laststatus=2 " Use 256 colours (Use this setting only if your terminal supports 256 colours) set t_Co=256
 
 "autocomplete
 :set completeopt=longest,menuone
