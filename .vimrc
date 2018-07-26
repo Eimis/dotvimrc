@@ -17,6 +17,13 @@ set autoindent
 let g:session_autosave='yes'
 let g:session_autoload='no'
 
+let g:indentLine_fileType = ['xml', 'xsd']
+let g:indentLine_char = '┆'
+
+"vim start screen:
+let g:startify_session_dir = '~/.vim/sessions'
+let g:startify_session_sort = 1
+
 " more comfortablekey binding for recursive search
 cabbrev ack Ack!
 "turn off search result highlighting:
@@ -250,7 +257,9 @@ NeoBundle 'digitaltoad/vim-jade' "Syntax for Jjade templates
 NeoBundle 'keith/swift.vim' "Syntax for Swift
 NeoBundle 'maksimr/vim-jsbeautify' "Beautiful js
 NeoBundle 'tell-k/vim-autopep8' "Auto pep8
-NeoBundle 'tpope/vim-rhubarb'
+NeoBundle 'tpope/vim-rhubarb' "enables : GBrowse
+NeoBundle 'Yggdroot/indentLine'  "indent lines
+NeoBundle 'mhinz/vim-startify'  "start screen
 
 call neobundle#end()
 
