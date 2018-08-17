@@ -102,8 +102,6 @@ autocmd FileType html set sw=2
 autocmd FileType python set ts=4
 autocmd FileType python set sts=4
 
-"close mvim process on exit:
-autocmd VimLeave * macaction terminate:
 set number
 set colorcolumn=80
 set hlsearch
